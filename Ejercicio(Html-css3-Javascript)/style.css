@@ -1,0 +1,163 @@
+/* Estilo general para el body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Fondo suave */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Estilo del contenedor principal */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo del saludo */
+#name {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Estilo del botón de login */
+#logearse {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#logearse:hover {
+  background-color: #45a049; /* Efecto hover */
+}
+
+/* Estilo de las cards de productos */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  width: calc(33% - 30px); /* Tres productos por fila */
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto al pasar el cursor sobre la card */
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+  border-radius: 8px;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card button:hover {
+  background-color: #e64a19; /* Efecto hover para el botón */
+}
+
+/* Estilo para los productos seleccionados */
+#selecionados {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Estilo de la tabla */
+#tabla {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+#tabla th, #tabla td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#tabla th {
+  background-color: #f4f4f4;
+}
+
+/* Estilo para el modal */
+#myModal {
+  display: none;
+  position: fixed;
+  z-index: 1; /* Aparece encima del contenido */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilo para el pie de la página o botón final */
+#final {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#final:hover {
+  background-color: #1976D2; /* Efecto hover */
+}
